@@ -1,0 +1,1494 @@
+/* CUSTOM RESETS
+================================================== */
+a {
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+a:focus,
+a:hover {
+    color: #ffffff;
+    outline: 0 none;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 22px;
+}
+
+/* TITULOS
+================================================== */
+h1 {
+    font-size: 62px;
+    color: #a9bbf0;
+}
+h2 {
+    font-size: 42px;
+    color: #a9bbf0;
+}
+h3 {
+    font-size: 36px;
+    color: #ffe600;
+}
+h4 {
+    font-size: 24px;
+    color: #a9bbf0;
+}
+h5 {
+    font-size: 16px;
+    color: #a9bbf0;
+}
+p + p {
+    margin-top: 40px;
+}
+
+/* Buttons */
+.btn {
+    line-height: 50px;
+    min-width: 200px;
+    font-size: 16px;
+    font-weight: 300;
+    border: 0;
+    border-radius: 50px;
+    color: #a9bbf0;
+    background-color: #a9bbf0;
+    padding: 0;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+.btn-border {
+    border: 1px solid #a9bbf0;
+}
+.btn-border:hover {
+    border: 1px solid #ffe600;
+}
+.btn-fill {
+    background-color: #ffffff;
+    color: #fff;
+}
+.btn-gray {
+    background-color: #f5f5f8;
+    color: #6698ca;
+}
+.btn-green {
+    background-color: #ffe600;
+    color: #fff;  
+}
+.btn:hover,
+button.btn:hover,
+.btn:focus,
+button.btn:focus {
+    background-color: #ffffff;
+    color: #93c2ee;
+}
+.btn-gray:hover,
+.btn-gray:focus {
+    background-color: #a9bbf0;
+    color: #fff;    
+}
+
+/* Forms */
+/* Input fields */
+.form-group {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+.form-control {
+    border-radius: 25px;
+    height: 50px;
+    padding: 15px 20px;
+    border-color: #a9bbf0;
+}
+.form-control:focus {
+    background-color: #a9bbf0;
+    border-color: #a9bbf0;
+    box-shadow: none;
+    outline: none;
+}
+/* Radiobutton fields */
+.radio-btn [type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    height: auto;
+    margin-top: 0;
+}
+.radio-btn label {
+    font-weight: 400;
+}
+.radio-btn [type="radio"]:not(:checked) + label,
+.radio-btn [type="radio"]:checked + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.radio-btn [type="radio"]:not(:checked) + label:before,
+.radio-btn [type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0; 
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #f5f5f8;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: border-color .2s;
+}
+.radio-btn [type="radio"]:not(:checked) + label:after,
+.radio-btn [type="radio"]:checked + label:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 4px;
+    background-color: #6fc754;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: opacity .2s;
+}
+.radio-btn [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+.radio-btn [type="radio"]:checked + label:after {
+    opacity: 1;
+}
+.radio-btn [type="radio"]:disabled:not(:checked) + label:before,
+.radio-btn [type="radio"]:disabled:checked + label:before {
+    border-color: #bbb;
+    background-color: #ddd;
+}
+.radio-btn [type="radio"]:disabled:checked + label:after {
+    color: #999;
+}
+.radio-btn [type="radio"]:disabled + label {
+    color: #aaa;
+}
+
+/* Selectpicker */
+.bootstrap-select .btn {
+    border: 1px solid #26272d;
+    border-radius: 10px;
+}
+.bootstrap-select .dropdown-menu {
+    padding: 5px 0;
+    min-width: 100%;
+    border: 1px solid #26272d; 
+    border-radius: 10px;
+}
+
+/* Tabs */
+.tab-style {
+    border-bottom: none;
+}
+.tab-style + .tab-content {
+    padding: 15px;
+    border: 1px solid #26272d;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.nav-tabs.tab-style > li.active > a,
+.nav-tabs.tab-style > li > a:hover {
+    border: 1px solid #6fc754;
+    background-color: #6fc754;
+    color: #fff;
+}
+.nav-tabs.tab-style > li > a {
+    position: relative;
+    color: #26272d;
+    margin-right: 0;
+    border: 1px solid #26272d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.nav-tabs.tab-style > li + li {
+    margin-left: 10px;
+}
+
+/* Accordion */
+.accordion.panel-group {
+    margin-bottom: 0;
+}
+.accordion .panel {
+    border: 0;
+    box-shadow: none;
+    border: 1px solid #26272d;
+    border-bottom: 0;
+    border-radius: 0;
+}
+.accordion .panel:first-child {
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+}
+.accordion .panel:last-child {
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom: 1px solid #26272d;
+}
+.accordion .panel-heading {
+    background-color: transparent;
+    padding: 0;
+}
+.accordion .panel-heading a {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+}
+.accordion .panel-heading a.collapsed {
+    background-color: transparent;
+    color: #26272d;
+}
+.accordion .panel-heading a.collapsed:hover,
+.accordion .panel-heading a {
+    background-color: #6fc754;   
+    color: #fff; 
+}
+.accordion .panel-heading a.collapsed::after {
+    content: "\f107";
+}
+.accordion .panel-heading a::after {
+    font-family: "FontAwesome";
+    content: "\f106";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+/* Pagination */
+.pagination {
+    margin: 0;
+    vertical-align: middle;
+}
+.pagination > li > a {
+    border: none;
+    color: #292a2c;
+    background-color: #a9bbf0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+.pagination > li + li > a {
+    margin-left: 5px;
+}
+.pagination > li.active > a,
+.pagination > li > a:hover,
+.pagination > li.active > a:hover {
+    background-color: #a9bbf0;
+    color: #a9bbf0;
+}
+.pagination > li:first-child > a {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.pagination > li:last-child > a {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.pagination > li.more > a {
+    margin-left: 0;
+    padding: 10px 5px;
+    pointer-events: none;
+    background-color: transparent;
+}
+  
+/* LAYOUT
+================================================== */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #26272d;
+}
+
+.img-res {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.img-chata {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    position: relative;
+}
+/* Background colors */
+.gray-bg {
+    background-color: #a9bbf0;
+}
+/* Margin and padding resets */
+.mb-10 {margin-bottom: 10px;}
+.mt-20 {margin-top: 20px;}
+.mt-50 {margin-top: 50px;}
+  
+/* HEADER
+================================================== */
+.site-header {
+    position: absolute;
+    padding: 35px 0 0;
+    background-color: transparent;
+    width: 100%;
+    z-index: 3;
+}
+/* Site-logo */
+.site-title {
+    font-size: 18px;
+    line-height: 26px;
+    color: #a9bbf0;
+}
+.site-title:hover {
+    color: #ffe600;
+}
+.site-title span {
+    font-weight: 700;
+}
+.site-title a:hover {
+    color: #a9bbf0;
+}
+/* Navigation */
+.navbar-collapse {
+    text-align: center;
+}
+.navbar-nav {
+    float: none;
+    display: inline-block;
+}
+.navbar-nav > li > a,
+.slicknav_nav > li > a {
+    padding: 0;
+    font-size: 16px;
+    position: relative;
+    color: #a9bbf0;
+    line-height: 26px;
+}
+.navbar-nav > li > a i {
+    margin-left: 5px;
+}
+.navbar-nav > li + li {
+    margin-left: 30px;
+}
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover,
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > li.active > a,
+.navbar-collapse li a:hover,
+.dropdown.open > a,
+.dropdown-menu a:hover,
+.dropdown:hover > a,
+.dropdown-menu>li>a:focus,
+.dropdown-menu li a:hover,
+.slicknav_nav > li.active a,
+.slicknav_open .slicknav_arrow,
+.slicknav_nav > li a:hover {
+    background-color: transparent;
+    color: #ffe600;
+}
+.navbar-toggle {
+    border-color: #a9bbf0;
+    margin: 0 15px 0 0;
+    position: relative;
+    top: -1px;
+}
+.navbar-toggle:hover,
+.navbar-toggle[aria-expanded=true] {
+    background-color: #a9bbf0;
+    border-color: #000;
+    cursor: pointer;
+}
+.navbar-toggle:hover .icon-bar,
+.navbar-toggle[aria-expanded=true] .icon-bar {
+    background-color: #000;
+}
+.navbar-toggle  .icon-bar {
+    background-color: #a9bbf0;
+}
+.navbar-nav .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 0;
+    min-width: 130px;
+    border: 0;
+    border-top: 5px solid #a9bbf0;
+    top: 140%;
+    transition: all 0.4s;
+}
+.navbar-nav li a:hover + .dropdown-menu,
+.navbar-nav .dropdown-menu:hover {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    transition-delay: 0s;
+}
+.dropdown-menu li a {
+    padding: 5px 15px;
+    position: relative;
+    left: 0;
+}
+.dropdown-menu li a:hover {
+    left: 15px;
+}
+  
+/* HERO
+================================================== */
+.hero {
+    position: relative;
+    height: 100vh; /* Asegúrate de que la sección ocupe la altura completa de la ventana */
+    width: 100%;
+    display: table;
+    overflow: hidden;
+}
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);   
+}
+.overlay:before {
+    content: '';
+    background-color: rgba(0, 0, 12, 0.747);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+.hero-content {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 75px;
+}
+.hero-text {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+.hero-text h1 {
+    position: relative;
+    margin: 0;
+    color: #a9bbf0;
+}
+.hero-text p {
+    position: relative;
+    margin: 45px 0 30px;
+    font-size: 20px;
+    color: #a9bbf0;
+}
+.hero-text .btn {
+    position: relative;
+    background-color: transparent;
+}
+.hero-text .btn:hover {
+    background-color: #ecd61000;
+    color: #ecd610;
+}
+.hero .breadcrumb {
+    padding-top: 60px;
+    margin-bottom: 0;
+}
+.hero .breadcrumb:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    height: 12px;
+    width: 80px;
+    border-top: 5px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: translateX(-50%);
+}
+.subpage-hero {
+    height: 450px;
+}
+.subpage-hero.overlay:before {
+    background-color: rgba(0, 2, 15, 0);
+}
+.subpage-hero .hero-content,
+.subpage-hero .hero-content h1,
+.subpage-hero a  {
+    color: #fff;
+} 
+.subpage-hero a:hover {
+    color: #6fc754;
+}
+
+.portfolio-hero {
+    background: url(../img/portfolio-hero.jpg) no-repeat center / cover;     
+}
+.fondo_hero_GENIUS {
+    background: url(../img/fondo_hero_GEN.png) no-repeat center / cover;     
+}
+.fondo_hero_PORTF {
+    background: url(../img/fondo_hero_PORTF.png) no-repeat center / cover;     
+}
+.fondo_hero_ESTRATEGIA {
+    background: url(../img/fondo_hero_ESTR.png) no-repeat center / cover;     
+} 
+.fondo_hero_SPTK {
+    background: url(../img/fondo_hero_SP2.png) no-repeat center / cover;     
+}
+.fondo_hero_URMA {
+    background: url(../img/fondo_hero_URMA.png) no-repeat center / cover;     
+}
+.fondo_hero_CAI {
+    background: url(../img/fondo_hero_CAI.png) no-repeat center / cover;     
+}
+.fondo_hero_SES {
+    background: url(../img/fondo_hero_SES.png) no-repeat center / cover;     
+} 
+.contact-hero {
+      background: url(../img/contact-hero.jpg) no-repeat center / cover;     
+}
+  
+/* SITEMAIN
+================================================== */
+/* site-section */
+.site-section_sobre_mi {
+    padding: 30px 0 70px;
+    background-color: #071021;
+}
+.subheading-text {
+    font-size: 20px;
+    font-style: italic;
+}
+.heading-separator {
+    position: relative;
+    margin: 0;
+    padding-bottom: 20px;
+    margin-top: 35px;
+}
+
+/* Section: Features */
+.section-features h2 {
+    padding-bottom: 40px;
+    font-size: 30px;
+}
+
+/* Section: Services */
+.section-services .subheading-text {
+    margin-bottom: 90px;
+}
+.service {
+    min-height: 250px;
+}
+.service-title {
+    margin: 35px 0 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.service-info {
+    font-size: 15px; 
+}
+
+/* Section: Map Feature */
+.section-map-feature {
+    padding-top: 250px;
+    background: #071021 url(../img/map.png) no-repeat top center / cover; 
+}
+.section-map-feature h2 {
+    padding-bottom: 30px;
+    margin: 0;
+}
+.section-map-feature h2,
+.section-map-feature p {
+    color: #fff;
+}
+.section-map-feature .btn {
+    margin: 80px 0 215px;
+}
+.counter {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
+}
+.counter-item h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffe600;
+}
+
+/* Section: Portfolio */
+.portfolio-item {
+    margin-top: 30px;
+    height: 270px;
+    position: relative;
+}
+.portfolio-item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    background-color: #04050f;
+    transition: right 0.25s ease-in-out;
+}
+.portfolio-item:hover:before {
+    right: 25%;
+}
+.portfolio-item-title,
+.portfolio-item a {
+    position: absolute;
+    left: 0px;
+    margin: 0;
+    font-size: 16px;
+    opacity: 0;
+}
+.portfolio-item-title {
+    width: 150px; 
+    top: 15px;  
+    transition: left 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+.portfolio-item:hover .portfolio-item-title {
+    left: 15px;
+    opacity: 1;
+}
+.portfolio-item a {
+    bottom: 15px;
+    color: #a9bbf0;
+    padding: 5px 12px;
+    border: 1px solid #a9bbf0;
+    border-radius: 50px;
+}
+.portfolio-item:hover a {
+    left: 55%;
+    opacity: 1;
+}
+.portfolio-item a:hover {
+    background-color: #ffe600;
+    color: #fff;
+}
+.portfolio-item a i {
+    width: 16px;
+    text-align: center;
+}
+
+/* PAGES
+============================================================================================================================================ */
+.subpage-site-section {
+    padding: 60px 0;
+}
+.breadcrumb {
+    background-color: transparent;
+    position: relative;
+}
+.breadcrumb .active {
+    color: #fff;
+}
+
+/* Portfolio */
+.portfolio-sorting li:nth-child(-n+3){
+    margin-bottom: 5px;
+}
+.portfolio-sorting li a {
+    line-height: 40px;
+    min-width: 120px;
+    font-size: 16px;
+}
+.portfolio-sorting li .active {
+    background-color: #6fc754;
+    color: #fff;  
+    box-shadow: none;   
+}
+#grid {
+    margin-top: 25px;
+}
+#grid .col-md-4 {
+    display: none;
+}
+#loadMore {
+    margin-top: 30px;
+}
+#loadMore.disabled {
+    background-color: #eee;
+    color: #000;
+    opacity: 0.3;
+}
+
+/* Portfolio-item */
+.project-img {
+    height: 480px;
+}
+.project-img + .project-img  {
+    margin-top: 20px;
+}
+.project-info h5 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+.project-description,
+.project-date-category {
+    margin: 15px 0 0;
+}
+.project-date-category p + p {
+    margin-top: 10px;
+}
+.project-date-category p span {
+    font-size: 14px;
+    text-transform: uppercase; 
+    color: #26272d;
+    font-weight: 400;
+}
+.project-info .btn {
+    margin-top: 25px;
+    line-height: 40px;
+    min-width: 120px;
+}
+.project-info .social-links {
+    margin-top: 25px;
+}
+.section-related-projects {
+    padding-top: 0;
+}
+
+/*  Blog */
+.blog-post + .blog-post {
+    margin-top: 60px;
+}
+.blog-post img {
+    height: 480px;
+}
+.post-content,
+.post-content .text-right,
+.post-meta {
+    margin-top: 25px;
+}
+.blog-post .post-title {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.post-content p {
+    margin: 25px 0 0;
+}
+.post-content .post-title a {
+    color: #26292c;
+}
+.post-content a {
+    color: #8c8f94;   
+}
+.post-content .read-more {
+    position: relative;
+    padding-right: 30px;
+    text-transform: uppercase;
+}
+.post-content .read-more:after {
+    content: '';
+    display: block;
+    background-color: #8c8f94;  
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    transition: background-color 0.25s ease-in-out;
+}
+.post-content .read-more:hover:after {
+    background-color: #6fc754; 
+}
+.blog-post a:hover + .post-content .post-title a,
+.post-content a:hover {
+    color: #6fc754;
+}
+.post-meta {
+    padding: 5px 0;
+}
+.post-meta span {
+    padding: 6px 0;
+}
+.post-meta span + span {
+    margin-left: 40px;
+}
+.post-meta span a {
+    position: relative;
+    padding: 6px 0 6px 40px;
+}
+.post-meta i,
+.post-author img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.post-author img {
+    height: 30px;
+    width: 30px;
+}
+.post-meta i {
+    font-size: 30px;
+}
+.post-category i {
+    top: 1px;
+}
+.section-blog .ui-pagination {
+    margin-top: 60px;
+}
+
+/*  Blog post */
+
+/* Sidebar */
+.sidebar {
+    padding-left: 30px;
+}
+
+.widget + .widget {
+    margin-top: 30px;
+}
+
+.widget-title {
+    font-size: 28px;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;   
+}
+
+.widget .list-unstyled a:hover {
+    padding-left: 15px;
+}
+
+.widget .list-unstyled li + li {
+    margin-top: 3px;
+}
+
+.widget-categories li a span {
+    float: right;
+}
+
+/* Contact
+/* Section: Contact-us */
+.section-contact-us h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    letter-spacing: 1px;
+}
+.section-contact-us .form-group label,
+.contact-info h3 {
+    margin: 0 0 10px 20px;
+    color: #26292c;
+    font-size: 16px;
+    font-weight: 300; 
+}
+.section-contact-us textarea {
+    height: 130px;
+}
+.section-contact-us .btn {
+    margin-top: 35px;
+}
+.contact-info {
+    padding-left: 30px;
+}
+.contact-info h3 {
+    margin-left: 0;
+    color: #8c8f94;
+}
+.contact-info .list-unstyled li {
+    font-size: 14px;
+    font-weight: 300;
+    color: #8c8f94;
+}
+.contact-info .list-unstyled + h3,
+.contact-info a + h3 {
+    margin-top: 30px;
+}
+.section-contact-us .row + .form-group,
+.section-contact-us .form-group + .form-group {
+    margin-top: 25px;
+}
+
+/* Section: map */
+.section-map {
+  height: 500px;
+  width: 100%
+}
+
+/* Section: Career Showcase */
+.career-section {
+    padding: 50px 0;
+    background-color: #f5f5f8;
+}
+.career-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 13px rgba(0, 67, 85, 0.425);
+}
+.career-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.career-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #a9bbf0;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.modal-body img {
+    max-width: 100%; /* Ajusta el ancho máximo al 90% del contenedor */
+    max-height: 100vh; /* Ajusta la altura máxima al 80% de la altura de la ventana */
+}
+
+.icon-responsive {
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    margin: 0 auto; /* Centro horizontal */
+    display: block; /* Hace que el margen automático funcione */
+}
+
+/* Cambiar tamaño de fuente del título */
+.contact-title {
+    font-size: 42px; /* Cambia este valor según tus necesidades */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Cambiar tamaño de fuente de la lista de contactos */
+.contact-links li {
+    font-size: 22px; /* Cambia este valor según tus necesidades */
+}
+
+/* Asegurar que el tamaño de fuente de los párrafos dentro de la lista sea consistente */
+.contact-links p {
+    font-size: 22px; /* Asegúrate de que este valor sea el mismo que el de .contact-links li */
+    display: inline; /* Para que el párrafo se alinee correctamente con los iconos */
+}
+
+/* SOBRE MI ================================================================================================= */
+.sobre_mi {
+    padding: 60px 0 80px;
+    background-color: #00010a;
+}
+
+.sobre_mi h2 {
+    font-size: 40px; /* Ajusta este valor según tus necesidades */
+    margin-bottom: 35px;
+    margin-top: 0px;
+    color: #a9bbf0;
+}
+
+.sobre_mi p {
+    font-size: 15px; /* Ajusta este valor según tus necesidades */
+    color: #ffffff;
+}
+
+.sobre_mi img {
+    position: absolute;
+    right: 15px;
+    left: 180px;
+    height: 370px;
+}
+
+/* HABILIDADES ================================================================================================= */
+.habilidades {
+    background-color: #04050f;
+}
+
+.habilidades .heading-separator {
+    color: #a9bbf0;
+}
+
+.habilidades .subheading-text {
+    margin-top: 1px;
+    margin-bottom: 70px;
+}
+
+.habilidades .service {
+    margin-top: 1px;
+}
+
+.habilidades .service-title {
+    color: #a9bbf0;
+}
+
+.habilidades .col-md-3:nth-child(n+5) .service {
+    margin-top: 30px;
+}
+
+/* CARRERA ================================================================================================= */
+.carrera {
+    background-color: #00010a;
+    padding: 15px 0; /* Aumenta el padding para agrandar la sección */
+}
+
+.carrera .heading-separator {
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+.carrera .text-center h2 {
+    color: #a9bbf0;
+    font-size: 40px; /* Aumenta el tamaño del título */
+    margin-bottom: 20px; /* Ajusta el espacio debajo del título */
+}
+
+.carrera .career-item {
+    background-color: #04050f;
+    margin-bottom: 40px; /* Aumenta el margen inferior entre elementos */
+    text-align: center; /* Asegúrate de que el texto esté centrado */
+}
+
+.carrera .career-item img {
+    width: 200px; /* Ajusta el tamaño de las imágenes */
+    height: 200px; /* Ajusta el tamaño de las imágenes */
+}
+
+.carrera .caption h3 {
+    font-size: 24px; /* Aumenta el tamaño de los subtítulos */
+}
+
+.carrera .caption p {
+    font-size: 14px; /* Ajusta el tamaño del texto de los párrafos */
+}
+
+.career-item a:hover .team-img {
+    border: 2px solid #ffe600; /* Cambia el color y grosor del borde según tus preferencias */
+}
+
+/* PORTFOLIO ================================================================================================= */
+.portafolio {
+    padding: 50px 0; /* Aumenta el padding para agrandar la sección */
+    background-color: #04050f; /* Cambia el color de fondo según tus necesidades */
+}
+
+.portafolio .text-center h2 {
+    color: #a9bbf0;
+    font-size: 40px; /* Ajusta el tamaño del título */
+    margin-top: 1px; /* Ajusta el espacio debajo del título */
+}
+
+.portafolio .subheading-text {
+    font-size: 18px; /* Ajusta el tamaño del subtítulo */
+    margin-bottom: 20px; /* Ajusta el espacio debajo del subtítulo */
+    margin-top: 0px; /* Ajusta el espacio debajo del subtítulo */
+    color: #ffffff; /* Cambia el color del texto del subtítulo */
+}
+
+.portafolio .portfolio-item {
+    box-shadow: 0 0 10px rgba(7, 0, 46, 0.699);
+    margin-bottom: 5px; /* Ajusta el espacio entre los elementos */
+}
+
+.portafolio .portfolio-item img {
+    width: 100%; /* Asegura que las imágenes ocupen el ancho completo del contenedor */
+    height: 100%; /* Mantén la proporción de las imágenes */
+    border-radius: 3px; /* Añade bordes redondeados a las imágenes */
+}
+
+.portafolio .portfolio-item-title {
+    font-size: 15px; /* Ajusta el tamaño de los títulos de los proyectos */
+    margin-top: 15px; /* Ajusta el espacio encima de los títulos */
+    color: #a9bbf0; /* Cambia el color de los títulos */
+}
+
+.portafolio .portfolio-item a {
+    color: #a9bbf0; /* Cambia el color de los iconos de flecha */
+    font-size: 20px; /* Ajusta el tamaño de los iconos de flecha */
+    margin-top: 10px; /* Ajusta el espacio encima de los iconos de flecha */
+    display: inline-block;
+}
+
+/* Estilo para el icono dentro del enlace al pasar el ratón */
+.portfolio-item a:hover i {
+    color: #04050f; /* Cambiar el color del icono */
+}
+
+/* CONTACTO FOOTER ================================================================================================= */
+.site-footer {
+    background-color: #00010a; /* Fondo del footer */
+    padding: 25px; /* Espaciado superior del footer */
+}
+
+.site-footer h2 {
+    font-size: 38px; /* Tamaño de fuente de los títulos */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    margin-bottom: 80px; /* Margen inferior de los títulos */
+    margin-top: 60px;
+}
+
+.site-footer > .container {
+    padding-bottom: 50px; /* Espaciado inferior del contenedor principal */
+}
+
+.site-footer .list-unstyled {
+    margin: 52px auto 0 auto; /* Margen superior, centrado horizontal */
+    text-align: left  /* Alineación central del texto */
+}
+
+.site-footer .list-unstyled li + li {
+    margin-top: 12px; /* Espaciado entre los elementos de la lista */
+}
+
+.contact-links li {
+    position: relative; /* Posicionamiento relativo para los iconos */
+}
+
+.contact-links li i {
+    position: absolute; /* Posicionamiento absoluto de los iconos */
+    top: 50%; /* Centrado vertical de los iconos */
+    width: 20px; /* Ancho de los iconos */
+    text-align: center; /* Alineación central del texto dentro del icono */
+    font-size: 25px; /* Tamaño de fuente de los iconos */
+    color: #ffe600; /* Color de los iconos */
+    transform: translateY(-50%); /* Alineación vertical */
+}
+
+.contact-links li a,
+.contact-links li p {
+    margin-left: 45px; /* Espaciado a la izquierda de los textos */
+    margin-top: 5px; /* Espaciado superior de los textos */
+    color: #ffe600; /* Color de los textos en la lista */
+    font-weight: 333; /* Grosor de la fuente */
+}
+
+.contact-links li a:hover,
+.contact-links li.active a {
+    color: #ffe600; /* Color al pasar el ratón por encima */
+}
+
+/* Título de contacto */
+.contact-title {
+    text-align: center; /* Alineación central del título */
+    font-size: 36px; /* Tamaño de fuente del título */
+}
+
+/* Iconos de redes sociales */
+.social-links .social-icons {
+    display: flex; /* Usar flexbox para organizar los iconos */
+    justify-content: center; /* Centrar los iconos */
+    gap: 48px; /* Espacio entre los íconos */
+}
+
+.social-links .social-icons a {
+    font-size: 8em; /* Tamaño del ícono */
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+.social-links .social-icons a:hover {
+    color: #e90404; /* Color al pasar el ratón */
+}
+
+/* Estilo común para íconos de redes sociales */
+.social-links a {
+    display: flex; /* Usar flexbox para centrar */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    width: 220px; /* Ancho del círculo */
+    height: 220px; /* Alto del círculo */
+    border: 4px solid; /* Borde de los íconos */
+    border-radius: 50%; /* Redondeo total para crear un círculo */
+    text-align: center; /* Alineación central del texto */
+    text-decoration: none; /* Quitar subrayado */
+    transition: border-color 0.3s ease; /* Transición suave del color del borde */
+}
+
+@media (min-width: 800px) {
+    .social-links a {
+        width: 200px; /* Ancho del círculo */
+        height: 200px; /* Alto del círculo */
+    }
+}
+
+.social-links a:hover {
+    border-color: #ffe600; /* Color del borde al pasar el ratón */
+}
+
+
+/* PROYECTOS CONFIG
+============================================================================================================== */
+.proyectos-config {
+    padding: 20px 0; /* Padding superior e inferior */
+    background-color: #04050f; /* Color de fondo */
+}
+
+.proyectos-config .container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrando el contenedor */
+    padding: 0 10px; /* Padding lateral */
+}
+
+.proyectos-config h3 {
+    color: #a9bbf0;
+    font-size: 24px; /* Tamaño de la fuente */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+.proyectos-config p {
+    font-size: 16px; /* Tamaño de la fuente */
+    line-height: 1.6; /* Altura de línea */
+    color: #ffffff; /* Color del texto */
+    padding: 0 15px; /* Padding lateral */
+}
+
+.proyectos-config .blog-post {
+    margin-bottom: 40px; /* Espacio inferior entre artículos */
+}
+
+.proyectos-config .img-res {
+    width: 100%; /* Ancho completo de la imagen */
+    height: auto; /* Altura automática */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.proyectos-config .project-description {
+    padding: 20px; /* Padding alrededor del contenido */
+    background-color: #00010a; /* Color de fondo */
+    border: 1px solid #a9bbf0; /* Borde del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.493); /* Sombra del contenedor */
+}
+
+.proyectos-config .post-info {
+    color: #a9bbf0;
+    font-size: 20px; /* Tamaño de la fuente del título */
+    margin-bottom: 15px; /* Espacio inferior */
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.proyectos-config .post-meta {
+    margin-top: 20px; /* Espacio superior */
+    margin-left: 15px;
+    font-size: 14px; /* Tamaño de la fuente */
+    color: #777; /* Color del texto */
+}
+
+.proyectos-config .post-meta a {
+    color: #ffe600; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.proyectos-config .post-meta a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.proyectos-config .text-right {
+    text-align: right; /* Alineación del texto a la derecha */
+}
+
+/* PROYECTOS CONFIG - CONTINUACIÓN
+================================================== */
+
+.proyectos-config .project-info {
+    margin-bottom: 5px; /* Espacio inferior entre bloques de información */
+}
+
+.proyectos-config .project-info h5 {
+    font-size: 20px; /* Tamaño de la fuente del subtítulo */
+    color: #a9bbf0; /* Color del texto */
+    margin-bottom: 1px; /* Espacio inferior del título */
+    margin-top: 30px; /* Espacio inferior del título */
+}
+
+.proyectos-config .project-info h2 {
+    font-size: 44px; /* Tamaño de la fuente del subtítulo */
+    color: #a9bbf0; /* Color del texto */
+    margin: 0px;
+
+}
+
+.proyectos-config .widget {
+    margin-bottom: 20px; /* Espacio inferior entre widgets */
+}
+
+.proyectos-config .widget-title {
+    color: #f3e4e4;
+    font-size: 32px; /* Tamaño de la fuente del título del widget */
+    margin-bottom: 15px; /* Espacio inferior */
+    margin-top: 20px; /* Espacio inferior */
+}
+
+.proyectos-config .widget-recent-posts ul,
+.proyectos-config .widget-tags ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+.proyectos-config .widget-recent-posts ul li,
+.proyectos-config .widget-tags ul li {
+    margin-bottom: 15px; /* Espacio inferior entre elementos de la lista */
+}
+
+.proyectos-config .widget-recent-posts ul li a,
+.proyectos-config .widget-tags ul li a {
+    font-size: 14px; /* Tamaño de la fuente */
+    color: #ffe600; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* CERTIFICADO CODER
+ */
+
+.modal-header {
+    background-color: #00010a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-body {
+    background-color: #00010a;
+}
+
+.modal-header h5,
+.modal-header button.close span {
+    color: #a9bbf0; /* Color inicial del texto */
+}
+
+/* Estilo del texto al pasar el ratón por encima */
+.modal-header h5:hover,
+.modal-header button.close span:hover {
+    color: #006fd6; /* Color del texto al pasar el ratón por encima */
+}
+
+/* Estilo inicial del enlace */
+.sobre_mi a {
+    color: #a9bbf0; /* Color inicial del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Estilo del enlace al pasar el ratón por encima */
+.sobre_mi a:hover {
+    color: #ffe600; /* Color del texto del enlace al pasar el ratón por encima */
+    text-decoration: none; /* Subrayado al pasar el ratón por encima (opcional) */
+}
+
+.contact-links li i {
+    position: absolute; /* Posicionamiento absoluto de los iconos */
+    top: 50%; /* Centrado vertical de los iconos */
+    width: 20px; /* Ancho de los iconos */
+    text-align: center; /* Alineación central del texto dentro del icono */
+    font-size: 25px; /* Tamaño de fuente de los iconos */
+    color: #a9bbf0; /* Color de los iconos */
+    transform: translateY(-50%); /* Alineación vertical */
+    margin-left: 60px;
+}
+
+.contact-links li a,
+.contact-links li p {
+    margin-left: 120px; /* Espaciado a la izquierda de los textos */
+    margin-top: 5px; /* Espaciado superior de los textos */
+    color: #ffffff; /* Color de los textos en la lista */
+    font-weight: 333; /* Grosor de la fuente */
+}
+
+.contact-links li a:hover,
+.contact-links li.active a {
+    color: #ffe600; /* Color al pasar el ratón por encima */
+}
+
+/* Título de contacto */
+.contact-title {
+    text-align: center; /* Alineación central del título */
+    font-size: 36px; /* Tamaño de fuente del título */
+}
+
+/* Iconos de redes sociales */
+.social-links .social-icons {
+    display: flex; /* Usar flexbox para organizar los iconos */
+    justify-content: center; /* Centrar los iconos */
+    gap: 48px; /* Espacio entre los íconos */
+}
+
+.social-links .social-icons a {
+    font-size: 8em; /* Tamaño del ícono */
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+.social-links .social-icons a:hover {
+    color: #ffffff; /* Color al pasar el ratón */
+}
+
+/* Estilo común para íconos de redes sociales */
+.social-links a {
+    display: flex; /* Usar flexbox para centrar */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    width: 220px; /* Ancho del círculo */
+    height: 220px; /* Alto del círculo */
+    border: 4px solid; /* Borde de los íconos */
+    border-radius: 50%; /* Redondeo total para crear un círculo */
+    text-align: center; /* Alineación central del texto */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave del color y fondo */
+}    
+
+/* Estilo para el ícono de WhatsApp */
+.social-links .whatsapp-bg {
+    color: #ffe600; /* Color del ícono de WhatsApp */
+    border-color: #ffe600; /* Color del borde del ícono de WhatsApp */
+}
+.social-links .whatsapp-bg:hover {
+    background-color: #25D366; /* Fondo al pasar el ratón por WhatsApp */
+    border-color: #25D366; /* Color del borde del ícono de Gmail */
+}
+
+/* Estilo para el ícono de Gmail */
+.social-links .gmail-bg {
+    color: #ffe600; /* Color del ícono de Gmail */
+    border-color: #ffe600; /* Color del borde del ícono de Gmail */
+}
+.social-links .gmail-bg:hover {
+    background-color: #DB4437; /* Fondo al pasar el ratón por Gmail */
+    border-color: #DB4437; /* Color del borde del ícono de Gmail */
+    
+}
+
+.copyright p {
+    font-size: 10px;
+}
+
+/* Modificar márgenes de los párrafos dentro de la clase 'copyright' */
+.copyright p {
+    margin-top: 10px;    /* Margen superior */
+    margin-right: 0px;   /* Margen derecho */
+    margin-bottom: 10px; /* Margen inferior */
+    margin-left: 0px;    /* Margen izquierdo */
+}
