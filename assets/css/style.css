@@ -376,7 +376,7 @@ html, body {
     padding: 0;
     font-size: 16px;
     position: relative;
-    color: #a9bbf0;
+    color: #cff0a9;
     line-height: 26px;
 }
 .navbar-nav > li > a i {
@@ -538,7 +538,7 @@ html, body {
     color: #fff;
 } 
 .subpage-hero a:hover {
-    color: #6fc754;
+    color: #050fa8;
 }
 
 .portfolio-hero {
